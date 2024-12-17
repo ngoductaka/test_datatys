@@ -1,5 +1,6 @@
 const { Pool } = require('pg');
 const chalk = require('chalk');
+require('dotenv').config();
 
 const pool = new Pool({
   user: process.env.PG_USER,
